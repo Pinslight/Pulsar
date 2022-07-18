@@ -49,5 +49,17 @@ $('.button_mini').each(function(i) {
   });
 });
 
+  $('#consultation-form').validate();
+  $('.#consultation form').validate({
+    rules: {
+      name: "required"
+      phone: "required"
+      email: {
+        required: true,
+        email: true
+      }
+    }
+  });
+  $('.#order form').validate();
 
 });
